@@ -6,9 +6,9 @@ app = Flask(__name__, instance_relative_config=True)
 
 @app.route('/')
 def hello_world():
-    recipient = os.getenv("RECIPIENT", "world")
+    recipient = os.getenv("RECIPIENT", "Goodbye my friend")
 
-    return jsonify({"message": "Hello", "recipient": recipient})
+    return jsonify({"message": "Goodbye my lover", "recipient": recipient})
 
 if __name__ == "__main__":
     app.run()
